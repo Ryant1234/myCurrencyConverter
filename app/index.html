@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8">
@@ -27,38 +28,118 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
+    
     <div class="container">
       <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">myCurrencyConverter</h3>
+    <img src="/images/CurrencyImage.jpg" class="img-rounded" alt="Cinque Terre" width="600" height="300">
+        <h3 class="text-muted">CurrencyConverter</h3>
       </div>
 
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
+    
 
       <div class="row marketing">
         <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-          
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-          
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
+        
+       <p>Get exchange rates here
+         <br>
+         
+ </p>
           
         </div>
       </div>
 
+ <div class="jumbotron">
+     
+      <div class="form-group">
+        <div class="col-lg-4">
+  <label for="CurrencyFrom">Convert From</label>
+  <select class="form-control" id="CurrencyFrom" name ="CurrencyFrom">
+    <option value="AUD">Australian Dollar</option>     
+      <option value="BRL">Brazilian Real</option>
+        <option value="CAD">Canadian Dollar</option>
+         <option value="CNY">Chinese Yuan</option>
+         <option value="HKD">Hong Kong Dollar</option>
+          <option value="EUR">EURO</option>   
+            <option value="HKD">	Hong Kong Dollar</option>
+             <option value="INR">Indian Rupee</option>
+              <option value="IDR">Indonesian Rupiah</option>           
+                 <option value="JPY">Japanese Yen</option> 
+                    <option value="KRW">Korean Won</option>
+                    <option value="MYR">Malaysian Ringgit</option>
+                    <option value="MXN">Mexican  Peso</option>
+                    <option selected value="NZD">New Zealand Dollar</option>
+                      <option value="PHP">Philippine Peso</option>
+                   <option value="SGD">	Singapore Dollar</option>
+                          <option value="ZAR">South African Rand</option>
+                          <option value="CHF">Swiss Franc</option>
+                                  <option value="THB">Thai Baht</option>
+                                     <option value="TRY">	Turkish Lira</option>
+                                             <option value="GBP">(UK)	Pound Sterling</option>
+                                                  <option value="USD">	US Dollar</option>
+                                                   
+  </select>
+</div>
+
+    <div class="col-lg-4">
+  <label for="CurrencyTo">Convert To</label>
+  <select class="form-control" id="CurrencyTo">
+       <option selected value="AUD">Australian Dollar</option>     
+      <option value="BRL">Brazilian Real</option>
+        <option value="CAD">Canadian Dollar</option>
+         <option value="CNY">Chinese Yuan</option>
+         <option value="HKD">Hong Kong Dollar</option>
+          <option value="EUR">EURO</option>   
+            <option value="HKD">	Hong Kong Dollar</option>
+             <option value="INR">Indian Rupee</option>
+              <option value="IDR">Indonesian Rupiah</option>           
+                 <option value="JPY">Japanese Yen</option> 
+                    <option value="KRW">Korean Won</option>
+                    <option value="MYR">Malaysian Ringgit</option>
+                    <option value="MXN">Mexican  Peso</option>
+                    <option  value="NZD">New Zealand Dollar</option>
+                      <option value="PHP">Philippine Peso</option>
+                   <option value="SGD">	Singapore Dollar</option>
+                          <option value="ZAR">South African Rand</option>
+                          <option value="CHF">Swiss Franc</option>
+                                  <option value="THB">Thai Baht</option>
+                                     <option value="TRY">	Turkish Lira</option>
+                                             <option value="GBP">(UK)	Pound Sterling</option>
+                                                  <option value="USD">	US Dollar</option>
+  </select>
+</div>
+</div>
+
+
+        <p class="btn btn-lg btn-success" id ="btnGetExchangeRate" >Change Currency</p>
+      </div>
+
+
+
+
+
+ 
+
+
+ </div>
+  <form>
+    <div class = "floatybox">
+   <h4 id = "lblFrom">a</h4>
+  <input type="text" id="txtFrom" class="exchangeRateTextbox" >
+</div>
+
+
+
+
+
+<!-- Exchange rate ConvertFrom Textbox is here-->
+   <!-- margin -->
+  <div class = "floatybox">
+   <h4 id = "lblFrom">a</h4>
+ <input type="none" id = "txtTo" class="exchangeRateTextbox" >
+</form>
+</div>
+
+</div>
       <div class="footer">
         <p>♥ from the Yeoman team</p>
       </div>
