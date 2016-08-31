@@ -14,25 +14,25 @@
 // base = exchangeFrom value
 
 //console.log(base);
-var data = "data";
+var data = 'data';
 
 //console.log(base);
 
 
 
-$("#btnGetExchangeRate").click
+$('#btnGetExchangeRate').click
 (function getExchangeRate() {
    
       $.ajax({
-          url: "http://api.fixer.io/latest?base=" +
+          url: 'http://api.fixer.io/latest?base=' +
           // What is another way of getting this variable?? Read more about variable context  
-           $("#CurrencyFrom option:selected").val(),
+           $('#CurrencyFrom option:selected').val(),
           beforeSend: function (xhrObj) {
             // Request headers
-            xhrObj.setRequestHeader("Content-Type", "application/octet-stream");
-            xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "d342c8d19d4e4aafbf64ed9f025aecc8");
+            xhrObj.setRequestHeader('Content-Type', 'application/octet-stream');
+            xhrObj.setRequestHeader('Ocp-Apim-Subscription-Key', 'd342c8d19d4e4aafbf64ed9f025aecc8');
         },
-        type: "GET",
+        type: 'GET',
         data: data
     
       })
@@ -41,14 +41,14 @@ $("#btnGetExchangeRate").click
           {
               
               // Get the returned data
-            var _currencyFrom =  $("#CurrencyFrom option:selected").val();
-            var _currencyTo =  $("#CurrencyTo option:selected").val();
+            var _currencyFrom =  $('#CurrencyFrom option:selected').val();
+            var _currencyTo =  $('#CurrencyTo option:selected').val();
              var exchangeRate = data.rates[_currencyTo];
            
 lblFrom.innerText = _currencyFrom;
 lblTo.innerText = _currencyTo;
               console.log(exchangeRate);
-        $("#txtTo").val(exchangeRate *  $("#txtFrom").val() );
+        $('#txtTo').val(exchangeRate *  $('#txtFrom').val() );
        
 
 
