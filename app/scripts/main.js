@@ -46,7 +46,7 @@ $("#btnGetExchangeRate").click
              var exchangeRate = data.rates[_currencyTo];
            
 lblFrom.innerText = _currencyFrom;
-lblTo.innerText = _currencyTo;git
+lblTo.innerText = _currencyTo;
               console.log(exchangeRate);
         $("#txtTo").val(exchangeRate *  $("#txtFrom").val() );
        
