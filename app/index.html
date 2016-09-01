@@ -49,13 +49,15 @@
       </div>
 
 
-<form class="form-inline">
+
  <div class="jumbotron">
-     
-      <div class="form-group">
-        <div class="col-lg-4">
+<div class="container">
+  <div class="row">
+     <div class="col-lg-4">
+  
+          
   <label for="CurrencyFrom">Convert From</label>
-  <select class="form-control" id="CurrencyFrom" name ="CurrencyFrom">
+  <select class="form-control ExchangeDropDown" id="CurrencyFrom" name ="CurrencyFrom">
     <option value="AUD">Australian Dollar</option>     
       <option value="BRL">Brazilian Real</option>
         <option value="CAD">Canadian Dollar</option>
@@ -86,9 +88,10 @@
 
 
 
-    <div class="col-lg-4">
+
+    <div class="col-lg-4 CurrencyToFloat">
   <label for="CurrencyTo">Convert To</label>
-  <select class="form-control" id="CurrencyTo" name ="CurrencyTo">
+  <select class="form-control ExchangeDropDown" id="CurrencyTo" name ="CurrencyTo">
        <option selected value="AUD">Australian Dollar</option>     
       <option value="BRL">Brazilian Real</option>
         <option value="CAD">Canadian Dollar</option>
@@ -112,25 +115,21 @@
                                              <option value="GBP">(UK)	Pound Sterling</option>
                                                   <option value="USD">	US Dollar</option>
                                                   </form>
+
+
+                                                  </div>
   </select>
+
 </div>
 </div>
+
+
 
 <div class ="row">
         <p class="btn btn-lg btn-success" id ="btnGetExchangeRate" >Change Currency</p>
 </div>
 
 
-
-
-
- 
-
-
-
-
-
- 
   <form class = "form-inline">
       <div class="form-group">
     <label for="txtFrom"></label>
@@ -155,9 +154,9 @@
  
  </div>
    
-    </div>
+   
     
- </div>
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

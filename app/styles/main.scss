@@ -95,27 +95,26 @@ body {
   }
     //Cant set this to a size in pixels.. This is good
   
-  
-  
-
-     
-
-
-
-
     .exchangeRateTextbox {
-   width:30%;
+   width:15ch;
     }
+
+   .CurrencyToFloat{
+       float: right;
+   }
+
+   .ExchangeDropDown
+   {
+     width:15em;
+   }
 
    
 
-   
-
-     #CurrencyTo  {
-      margin-right:15em;
-    }
 
   #btnGetExchangeRate{
     margin-top:1.5em;
     margin-bottom:1.5em;
   }
+
+
+
