@@ -48,6 +48,8 @@
         </div>
       </div>
 
+
+<form class="form-inline">
  <div class="jumbotron">
      
       <div class="form-group">
@@ -86,7 +88,7 @@
 
     <div class="col-lg-4">
   <label for="CurrencyTo">Convert To</label>
-  <select class="form-control" id="CurrencyTo">
+  <select class="form-control" id="CurrencyTo" name ="CurrencyTo">
        <option selected value="AUD">Australian Dollar</option>     
       <option value="BRL">Brazilian Real</option>
         <option value="CAD">Canadian Dollar</option>
@@ -109,13 +111,14 @@
                                      <option value="TRY">	Turkish Lira</option>
                                              <option value="GBP">(UK)	Pound Sterling</option>
                                                   <option value="USD">	US Dollar</option>
+                                                  </form>
   </select>
 </div>
 </div>
 
-
+<div class ="row">
         <p class="btn btn-lg btn-success" id ="btnGetExchangeRate" >Change Currency</p>
-      
+</div>
 
 
 
@@ -124,11 +127,15 @@
  
 
 
-  <form>
-    <div class = "floatybox">
-   <h4 id = "lblFrom"></h4>
+
+
+
+ 
+  <form class = "form-inline">
+      <div class="form-group">
+    <label for="txtFrom"></label>
   <input type="text" id="txtFrom" class="exchangeRateTextbox" >
-</div>
+
 
 
 
@@ -136,8 +143,10 @@
 
 <!-- Exchange rate ConvertFrom Textbox is here-->
    <!-- margin -->
-  <div class = "floatybox">
-   <h4 id = "lblTo"></h4>
+  
+
+
+  <label for="txtTo"></label>
  <input type="none" id = "txtTo" class="exchangeRateTextbox" >
 </form>
 </div>

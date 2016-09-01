@@ -41,8 +41,8 @@ $('#btnGetExchangeRate').click(function getExchangeRate() {
       var _currencyTo = $('#CurrencyTo option:selected').val();
       var exchangeRate = data.rates[_currencyTo];
 
-      lblFrom.innerText = _currencyFrom;
-      lblTo.innerText = _currencyTo;
+      $("label[for='txtFrom']").html(_currencyFrom);
+      $("label[for='txtTo']").html(_currencyTo);
       console.log(exchangeRate);
       $('#txtTo').val(exchangeRate * $('#txtFrom').val());
     }
