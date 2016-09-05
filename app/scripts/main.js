@@ -1,7 +1,9 @@
 // Need to change the "selected" of the drop down menu
 
 
-
+// base currency for comparing to other currencies
+var base =   $('#CurrencyFrom option:selected').val()
+var btnGetExchangeRate = $('#btnGetExchangeRate')
 
 // Get button click going, get json data request going
 // Remember to use console.log
@@ -15,18 +17,18 @@
 
 //console.log(base);
 var data = 'data';
-
+var lblFrom = $('label[for=\'txtFrom\']');
+var txtTo = $('label[for=\'txtTo\']');
 //console.log(base);
 
 
 
-$('#btnGetExchangeRate').click
+btnGetExchangeRate.click(
 (function getExchangeRate() {
    
       $.ajax({
-          url: 'http://api.fixer.io/latest?base=' +
-          // What is another way of getting this variable?? Read more about variable context  
-           $('#CurrencyFrom option:selected').val(),
+          url: 'http://api.fixer.io/latest?base=' + 
+        base,
           beforeSend: function (xhrObj) {
             // Request headers
             xhrObj.setRequestHeader('Content-Type', 'application/octet-stream');
@@ -45,9 +47,10 @@ $('#btnGetExchangeRate').click
             var _currencyTo =  $('#CurrencyTo  option:selected').val();
              var exchangeRate = data.rates[_currencyTo];
            
-$('label[for=\'txtFrom\']').html(_currencyFrom);
-$('label[for=\'txtTo\']').html(_currencyTo);
+lblFrom.html(_currencyFrom);
+txtTo.html(_currencyTo);
               console.log(exchangeRate);
+        // Have to use Jquery to get the value here, can't just use "txtTo or txtFrom"
         $('#txtTo').val(exchangeRate *  $('#txtFrom').val() );
        
 
@@ -59,4 +62,4 @@ $('label[for=\'txtTo\']').html(_currencyTo);
 //})
   //
 
-})})
+})}))
