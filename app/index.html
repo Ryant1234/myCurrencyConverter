@@ -5,8 +5,16 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
     <title>myCurrencyConverter</title>
 
+
+  
+	<link rel="stylesheet" href="/app/styles/flipclock.css">
+
+    
+    
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
@@ -32,8 +40,11 @@
     
     <div class="container">
       <div class="header">
-    <img src="/images/CurrencyImage.jpg" class="img-responsive" alt="A picture of numerous currencies"
-   >
+    <img src="/images/CurrencyImage.jpg" class="img-responsive" alt="A picture of numerous currencies">
+   
+   
+   <!-- Clock-->
+   <div class="your-clock"></div>
      
 
         <h3 class="text-muted">CurrencyConverter</h3>
@@ -129,9 +140,9 @@
 
 
 
-<div class ="row">
+ <div class ="row"> 
         <p class="btn btn-lg btn-success" id ="btnGetExchangeRate">Change Currency</p>
-</div>
+
 
 
 
@@ -140,24 +151,20 @@
   <input type="number" id="txtFrom" class="exchangeRateTextbox" >
 
 
-
-
-
+ 
 
 <!-- Exchange rate ConvertFrom Textbox is here-->
    <!-- margin -->
   
-
-
   <label for="txtTo"></label>
  <input type="" id = "txtTo" class="exchangeRateTextbox" readonly >
 </form>
 </div>
 
-</div>
+ </div>
  
  </div>
-   
+   </div>
    
     
 
@@ -190,6 +197,9 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    
+    
+    	<script src="/app/scripts/flipclock/js/flipclock.min.js"></script>
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->

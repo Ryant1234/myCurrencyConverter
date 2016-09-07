@@ -1,6 +1,15 @@
-///<reference path='C:\Users\Ryan\Documents\github\myCurrencyConverter\typings\jquery\jquery.d.ts' />
 
-// Need to change the "selected" of the drop down menu
+/// <reference path="C:\Users\Ryan\Documents\github\myCurrencyConverter\typings\jquery\jquery.d.ts" />
+
+
+
+
+
+  var clock = $('.your-clock').FlipClock({
+// ... your options here
+});
+
+
 
 
 // base currency for comparing to other currencies
