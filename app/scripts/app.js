@@ -1,11 +1,14 @@
+//I've installed everything to do with typescript but am still having problems when I don't include the reference path
+// For some reason my typescript was pointing at a 1.0.3 folder instead of the most recent one 
+// in "Environmental Variables in Control Panel\System\Advanced system Settings"
+// I still have trouble with certain Jquery extensions unfortunetly
 /// <reference path="C:\Users\Ryan\Documents\github\myCurrencyConverter\typings\jquery\jquery.d.ts" />
-// Need to change the "selected" of the drop down menu
 var exchangeFrom;
 var exchangeTo;
 
-var appInsights = require('applicationinsights');
-appInsights.setup('c8f1738f-44b4-446d-837f-8de2fd72ee7f').start();
 
+var appInsights = require("applicationinsights");
+appInsights.setup("<instrumentation_key>").start();
 //        var exchangeRate = data.rates[_currencyTo];
 // base currency for comparing to other currencies
 var base = $('#CurrencyFrom option:selected').val();

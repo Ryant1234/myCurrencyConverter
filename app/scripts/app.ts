@@ -7,8 +7,7 @@
 
 /// <reference path="C:\Users\Ryan\Documents\github\myCurrencyConverter\typings\jquery\jquery.d.ts" />
 
-var appInsights = require("applicationinsights");
-appInsights.setup("c8f1738f-44b4-446d-837f-8de2fd72ee7f").start();
+
 
  var exchangeFrom:string 
 var exchangeTo:string 
