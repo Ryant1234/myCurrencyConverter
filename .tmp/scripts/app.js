@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 //I've installed everything to do with typescript but am still having problems when I don't include the reference path
 // For some reason my typescript was pointing at a 1.0.3 folder instead of the most recent one 
@@ -8,8 +8,6 @@
 var exchangeFrom;
 var exchangeTo;
 
-var appInsights = require("applicationinsights");
-appInsights.setup("<instrumentation_key>").start();
 //        var exchangeRate = data.rates[_currencyTo];
 // base currency for comparing to other currencies
 var base = $('#CurrencyFrom option:selected').val();

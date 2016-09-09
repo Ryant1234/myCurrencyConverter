@@ -7,8 +7,6 @@ var exchangeFrom;
 var exchangeTo;
 
 
-var appInsights = require('applicationinsights');
-appInsights.setup('<instrumentation_key>').start();
 //        var exchangeRate = data.rates[_currencyTo];
 // base currency for comparing to other currencies
 var base = $('#CurrencyFrom option:selected').val();
