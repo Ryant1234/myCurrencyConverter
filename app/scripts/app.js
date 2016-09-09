@@ -3,8 +3,8 @@
 var exchangeFrom;
 var exchangeTo;
 
-var appInsights = require("applicationinsights");
-appInsights.setup("c8f1738f-44b4-446d-837f-8de2fd72ee7f").start();
+var appInsights = require('applicationinsights');
+appInsights.setup('c8f1738f-44b4-446d-837f-8de2fd72ee7f').start();
 
 //        var exchangeRate = data.rates[_currencyTo];
 // base currency for comparing to other currencies
