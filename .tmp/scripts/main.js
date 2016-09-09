@@ -1,6 +1,2 @@
-'use strict';
-
-var clock = $('.your-clock').FlipClock({
-  // ... your options here
-});
+"use strict";
 //# sourceMappingURL=main.js.map

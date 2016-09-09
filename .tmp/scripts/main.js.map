@@ -1,1 +1,1 @@
-{"version":3,"sources":["main.js"],"names":["clock","$","FlipClock"],"mappings":";;AAAA,IAAIA,QAAQC,EAAE,aAAF,EAAiBC,SAAjB,CAA2B;AACvC;AADuC,CAA3B,CAAZ","file":"main.js","sourcesContent":["var clock = $('.your-clock').FlipClock({\r\n// ... your options here\r\n});"],"sourceRoot":"/source/"}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"main.js","sourcesContent":[],"sourceRoot":"/source/"}
