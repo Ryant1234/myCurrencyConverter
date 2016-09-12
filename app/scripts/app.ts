@@ -1,21 +1,13 @@
-//test!!@
 
 //I've installed everything to do with typescript but am still having problems when I don't include the reference path
 // For some reason my typescript was pointing at a 1.0.3 folder instead of the most recent one 
 // in "Environmental Variables in Control Panel\System\Advanced system Settings"
 // I still have trouble with certain Jquery extensions unfortunetly
 
-
-
-// On btnclick if the value is of left cv is == right cb
-
-
-// We want an event to fire for when the option the user has selected has changed, which will change the label for the currencyFrom textbox
-
-
+// In the future it would be good to find out how to save the JSON data so we only need to grab it once
+// Probably has something to do with events? 
 
 /// <reference path="C:\Users\Ryan\Documents\github\myCurrencyConverter\typings\jquery\jquery.d.ts" />
-
 
 
 //  The currency we want to exchange from. 
@@ -23,16 +15,11 @@
 
 var exchangeTo:string; 
 
-
 // This is the currency we want to exchange from. We send this to where we request the JSON from
 var base:string;
 
-
-
 var btnGetExchangeRate = $('#btnGetExchangeRate');
 
-
-  
 
 var data:string = 'data';
 
