@@ -33,7 +33,7 @@ var lblTo = $('label[for=\'txtTo\']');
 
 
 
-btnGetExchangeRate.click((function getExchangeRate() {
+ 
 btnGetExchangeRate.click((function getExchangeRate() {
     // For some reason I could not use != below
     // If the value(countries currency) in both of the drop down boxes is the same 
@@ -90,4 +90,3 @@ btnGetExchangeRate.click((function getExchangeRate() {
     }
 }));
 
-}));
