@@ -36,7 +36,7 @@
    >
      
 
-        <h3 class="text-muted">CurrencyConverter</h3>
+        <h3 class="text-muted">Currency Converter</h3>
       </div>
 
     
@@ -58,7 +58,7 @@
  <div class="jumbotron">
 <div class="container">
   <div class="row">
-   <div class="col-md-4">
+   <div class="col-md-6 ">
   
   <!-- A selection of currencies for web app users to Exchange From and To.  The Options and Values are based upon the fixer.io API values. -->
 
@@ -96,7 +96,7 @@
 
 
 
-<div class = "col-md-4 CurrencyToFloat"> 
+<div class = "col-md-6 CurrencyToFloat"> 
   <label for="CurrencyTo">Convert To</label>
   <select class="form-control ExchangeDropDown" id="CurrencyTo" name ="CurrencyTo">
        <option selected value="AUD">Australian Dollar</option>     
@@ -140,28 +140,36 @@
 
 
 
-
 <div class ="row">
         <p class="btn btn-lg btn-success" id ="btnGetExchangeRate">Change Currency</p>
 </div>
 
 <!-- The user enters the amount of the currency they want to convert--> 
 
+<div class="container">
+<div class ="row">
+  <div class = "col-md-6">
       <div class="form-group">
-    <label for="txtFrom">Enter amount here --></label>
+        
+    <label for="txtFrom">Amount</label>
   <input type="number" id="txtFrom" class="exchangeRateTextbox" >
-
-
-
+ </div>
+</div>
 
 
 <!-- This text box is read only as we don't want our users to change data  in here--> 
-
+  <div class = "col-md-6">
+ <div class = "form-group">
   <label for="txtTo"></label>
  <input type="" id = "txtTo" class="exchangeRateTextbox" readonly >
 </form>
 </div>
+</div>
+ </div>
 
+</div>
+</div>
+</div>
 </div>
  
  </div>

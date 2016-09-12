@@ -18,7 +18,7 @@ var data = 'data';
 // lblFrom just displays the currency code for the  currency we are exchanging from 
 // next to the amount we want to compare 
 var lblFrom = $('label[for=\'txtFrom\']');
-var txtFrom = $("#txtFrom");
+var txtFrom = $('#txtFrom');
 //lblTo is the label for  where we display the exchange rate for the currency we want to exchange to.
 var lblTo = $('label[for=\'txtTo\']');
 btnGetExchangeRate.click(function getExchangeRate() {
@@ -27,7 +27,7 @@ btnGetExchangeRate.click(function getExchangeRate() {
     if ($('#CurrencyFrom option:selected').val() == $('#CurrencyTo  option:selected').val()) {
         // Display text on the web page to the user telling them why the action cannot be peformed
         $('.hiddentext').css('display', 'inline');
-        $(".hiddentextwarning").text("You cannot convert a currency 'to' itself, please change an option");
+        $('.hiddentextwarning').text('You cannot convert a currency \'to\' itself, please change an option');
     } else
         // If the currencys are not the same
         {
@@ -62,12 +62,12 @@ btnGetExchangeRate.click(function getExchangeRate() {
                         $('#txtTo').val($('#txtFrom').val() * exchangeRate);
                     } else {
                         $('.hiddentext').css('display', 'inline');
-                        $(".hiddentextwarning").text("We seem to be having a problem, please try again later");
+                        $('.hiddentextwarning').text('We seem to be having a problem, please try again later');
                     }
                 });
             } else {
                 $('.hiddentext').css('display', 'inline');
-                $(".hiddentextwarning").text("Please enter an amount to be converted");
+                $('.hiddentextwarning').text('Please enter an amount to be converted');
             }
         }
 });
