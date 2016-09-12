@@ -90,4 +90,4 @@ btnGetExchangeRate.click((function getExchangeRate() {
     }
 }));
 
-}))
+}));
