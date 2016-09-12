@@ -40,7 +40,7 @@ btnGetExchangeRate.click((function getExchangeRate() {
     if ($('#CurrencyFrom option:selected').val() == $('#CurrencyTo  option:selected').val()) {
         // Display text on the web page to the user telling them why the action cannot be peformed
         $('.hiddentext').css('display', 'inline');
-        $(".hiddentextwarning").text("You cannot convert a currency 'to' itself, please change an option");
+        $(".hiddentextwarning").text("You cannot convert a currency to itself, please change an option");
     }
     else 
     // If the currencys are not the same
@@ -90,3 +90,4 @@ btnGetExchangeRate.click((function getExchangeRate() {
     }
 }));
 
+}))
