@@ -42,7 +42,7 @@
     
 
       <div class="row marketing">
-        <div class="col-xs-10 col-md-5">
+        <div class="col-md-6">
           <div class="container">
        <p class = "text-center">Get exchange rates for numerous currencies here!! These rates are updated at 3:00AM NZST daily. </p>
         
@@ -58,7 +58,7 @@
  <div class="jumbotron">
 <div class="container">
   <div class="row">
-   <div class="col-xs-12 col-md-6 ">
+   <div class="col-md-6 ">
   
   <!-- A selection of currencies for web app users to Exchange From and To.  The Options and Values are based upon the fixer.io API values. -->
 
@@ -94,9 +94,19 @@
 
 
 
+  <div class = "col-md-6">
+
+        
+    <label for="txtFrom">Amount</label>
+  <input type="number" id="txtFrom" class="exchangeRateTextbox" >
+
+</div>
+</div>
 
 
-<div class = "col-xs-12  col-md-6 CurrencyToFloat"> 
+
+  <div class="row">
+<div class = "col-md-6"> 
   <label for="CurrencyTo">Convert To</label>
   <select class="form-control ExchangeDropDown" id="CurrencyTo" name ="CurrencyTo">
        <option selected value="AUD">Australian Dollar</option>     
@@ -121,12 +131,17 @@
                                      <option value="TRY">	Turkish Lira</option>
                                              <option value="GBP">(UK)	Pound Sterling</option>
                                                   <option value="USD">	US Dollar</option>
-                                            
+                                                </select>
+                                                </div>
 
+<div class = "col-md-6"> 
+  <label for="txtTo">Currency</label>
+ <input type="" id = "txtTo" class="exchangeRateTextbox" readonly >
 
-                                                  </div>
-  </select>
 </div>
+</div>
+  
+
 </div>
 
 <div class="perfectDiv">
@@ -146,23 +161,12 @@
 
 <!-- The user enters the amount of the currency they want to convert--> 
 
-<div class="container">
-<div class ="row">
-  <div class = "col-md-6">
 
-        
-    <label for="txtFrom">Amount</label>
-  <input type="number" id="txtFrom" class="exchangeRateTextbox" >
-
-</div>
 
 
 <!-- This text box is read only as we don't want our users to change data  in here--> 
   <div class = "col-md-6">
 
-  <label for="txtTo">To</label>
- <input type="" id = "txtTo" class="exchangeRateTextbox" readonly >
-</form>
 
 </div>
  </div>
